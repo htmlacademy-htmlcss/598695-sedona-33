@@ -105,10 +105,24 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <label class="control">от</label>
-                  <input type="text" name="minimum-price">0
+              <div>
+                <div>
+                  <label class="control">от</label>
+                  <input type="text" name="minimum-price" value="0">
+                </div>
+                <div>
                   <label class="control">до</label>
-                  <input type="text" name="maximum-price">9000
+                  <input type="text" name="maximum-price" value="9000">
+                </div>
+              </div>
+              <div>
+                <button class="range-start">
+                  <span class="visually-hidden">Цена от</span>
+                </button>
+                <button class="range-end">
+                  <span class="visually-hidden">Цена до</span>
+                </button>
+              </div>  
             </fieldset>
             <div class="action">
               <button class="button" type="submit">Применить</button>
