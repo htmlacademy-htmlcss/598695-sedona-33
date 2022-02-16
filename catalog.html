@@ -126,8 +126,8 @@
               </div>  
             </fieldset>
             <div class="action">
-              <button class="button button-color" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -140,17 +140,18 @@
           <option value="popular">Сначала популярное</option>
         </select>
         <div class="result-view">
-           <a class="result-view-icon result-view-icon-tile result-view-icon-current button" href="#">
+           <a class="result-view-icon result-view-icon-tile result-view-icon-current" href="#">
           <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a href="#" class="result-view-icon result-view-icon-slaider button">
+          <a href="#" class="result-view-icon result-view-icon-slaider">
             <span class="visually-hidden">Показать слайды</span>
           </a>
-          <a href="#" class="result-view-icon result-view-icon-list button">
+          <a href="#" class="result-view-icon result-view-icon-list">
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
       </section>
+      <section class="hotel-search">
       <ul class="hotel-search-list">
         <li class="hotel-card">
           <a class="hotel-card-image" href="hotel.html">
@@ -245,6 +246,7 @@
           </div>
         </li>
       </ul>
+    </section>
     <div class="add-search-result">
       <a class="add-search-result-link button" href="#">Загрузить ещё</a>
     </div>
@@ -271,7 +273,7 @@
           </li>
         </ul>
         <div class="result-number">
-          <label>Гостиниц на странице:</label>
+          <p>Гостиниц на странице:</p>
             <select class="select-page" aria-label="Количество гостиниц">
               <option value="for">4</option>
               <option value="six">6</option>
@@ -280,7 +282,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="newsletter newsletter-br">
+    <section class="newsletter">
       <h4 class="newsletter-title">Подпишитесь на рассылку</h4>
       <p class="newsletter-description">Только полезная информация и никакого спама,
       честное бойскаутское!</p>
