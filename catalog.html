@@ -11,7 +11,7 @@
         <img src="images/logo.svg" alt="Логотип Седоны" width="139" height="70">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -43,8 +43,7 @@
     <main class="main">
       <section class="filter">
         <h1 class="filter-item"> Гостиницы Седоны</h1>
-        <nav class="navigation-filter">
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs list-reset">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-icon-home" href="index.html">
                 <span class="visually-hidden">Главная страница</span>
@@ -54,13 +53,12 @@
               <a class="breadcrumbs">Гостиницы</a>
             </li>
           </ul>
-        </nav>
         <div class="catalog-filter">
           <h2 class="visually-hidden">Основные критерии поиска гостиницы</h2>
           <form class="catalog-filter-point" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list list-reset">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="swimming-pool" checked>
@@ -83,7 +81,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list list-reset">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
@@ -106,7 +104,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <div>
+              <div class="price-control">
                 <div class="meaning">
                   <label class="control">от</label>
                   <input type="text" name="minimum-price" value="0">
@@ -152,7 +150,7 @@
         </div>
       </section>
       <section class="hotel-search">
-      <ul class="hotel-search-list">
+      <ul class="hotel-search-list list-reset">
         <li class="hotel-card">
           <a class="hotel-card-image" href="hotel.html">
             <img src="images/hotel-1.jpg" alt="Первая картинка" width="299" height="206">
@@ -246,13 +244,13 @@
           </div>
         </li>
       </ul>
-    </section>
     <div class="add-search-result">
       <a class="add-search-result-link button" href="#">Загрузить ещё</a>
     </div>
+  </section>
     <section class="search-pages">
       <h2 class="visually-hidden">Найденные страницы</h2>
-        <ul class="pagination">
+        <ul class="pagination list-reset">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -293,7 +291,7 @@
     </section>
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <ul class="footer-contacts-social social-list">
+      <ul class="footer-contacts-social list-reset social-list">
         <li class="social-item">
           <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
