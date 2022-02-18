@@ -15,6 +15,17 @@
     font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
@@ -180,10 +191,6 @@ li {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item .advantages-item-wrapper {
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
 .advantages-item:nth-child(4n) .advantages-item-wrapper {
     background: rgba(131, 179, 211, 0.2);
 }
@@ -214,11 +221,6 @@ li {
     background-repeat: no-repeat;
 }
 
-.advantages-item-wrapper {
-    width: 400px;
-    height: 384px;
-}
-
 .search-title {
     font-weight: 700;
     font-size: 30px;
@@ -242,7 +244,7 @@ li {
     margin-left: auto;
     margin-right: auto; 
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 9px;
 }
 
 footer {
@@ -283,7 +285,6 @@ footer {
 }
 
 .newsletter-button {
-    height: 61px;
     width: 200px;
     font-size: 20px;
     text-transform: uppercase;
@@ -328,7 +329,7 @@ footer {
 
 .filter {
     background-image: url("../images/catalog-background.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #FFFFFF;
 }
