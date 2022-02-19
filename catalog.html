@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +11,7 @@
         <img src="images/logo.svg" alt="Логотип Седоны" width="139" height="70">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -23,12 +24,12 @@
         </ul>
         <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-user-link search-icon" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-user-link favorites-icon" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="number">12</span>
             </a>
@@ -42,8 +43,7 @@
     <main class="main">
       <section class="filter">
         <h1 class="filter-item"> Гостиницы Седоны</h1>
-        <nav class="navigation-filter">
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs list-reset">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-icon-home" href="index.html">
                 <span class="visually-hidden">Главная страница</span>
@@ -53,13 +53,12 @@
               <a class="breadcrumbs">Гостиницы</a>
             </li>
           </ul>
-        </nav>
         <div class="catalog-filter">
           <h2 class="visually-hidden">Основные критерии поиска гостиницы</h2>
           <form class="catalog-filter-point" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list list-reset">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="swimming-pool" checked>
@@ -82,7 +81,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list list-reset">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
@@ -105,17 +104,17 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <div>
-                <div>
+              <div class="price-control">
+                <div class="meaning">
                   <label class="control">от</label>
                   <input type="text" name="minimum-price" value="0">
                 </div>
-                <div>
+                <div class="meaning">
                   <label class="control">до</label>
                   <input type="text" name="maximum-price" value="9000">
                 </div>
               </div>
-              <div>
+              <div class="range-price">
                 <button class="range-start">
                   <span class="visually-hidden">Цена от</span>
                 </button>
@@ -125,8 +124,8 @@
               </div>  
             </fieldset>
             <div class="action">
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -139,18 +138,19 @@
           <option value="popular">Сначала популярное</option>
         </select>
         <div class="result-view">
-           <a class="result-view-icon result-view-icon-tile result-view-icon-current button" href="#">
+           <a class="result-view-icon result-view-icon-tile result-view-icon-current" href="#">
           <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a href="#" class="result-view-icon result-view-icon-slaider button">
+          <a href="#" class="result-view-icon result-view-icon-slaider">
             <span class="visually-hidden">Показать слайды</span>
           </a>
-          <a href="#" class="result-view-icon result-view-icon-list button">
+          <a href="#" class="result-view-icon result-view-icon-list">
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
       </section>
-      <ul class="hotel-search-list">
+      <section class="hotel-search">
+      <ul class="hotel-search-list list-reset">
         <li class="hotel-card">
           <a class="hotel-card-image" href="hotel.html">
             <img src="images/hotel-1.jpg" alt="Первая картинка" width="299" height="206">
@@ -247,9 +247,10 @@
     <div class="add-search-result">
       <a class="add-search-result-link button" href="#">Загрузить ещё</a>
     </div>
+  </section>
     <section class="search-pages">
       <h2 class="visually-hidden">Найденные страницы</h2>
-        <ul class="pagination">
+        <ul class="pagination list-reset">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -269,8 +270,8 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <div class="">
-          <label>Гостиниц на странице:</label>
+        <div class="result-number">
+          <p>Гостиниц на странице:</p>
             <select class="select-page" aria-label="Количество гостиниц">
               <option value="for">4</option>
               <option value="six">6</option>
@@ -279,7 +280,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="newsletter newsletter-br">
+    <section class="newsletter">
       <h4 class="newsletter-title">Подпишитесь на рассылку</h4>
       <p class="newsletter-description">Только полезная информация и никакого спама,
       честное бойскаутское!</p>
@@ -290,7 +291,7 @@
     </section>
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <ul class="footer-contacts-social social-list">
+      <ul class="footer-contacts-social list-reset social-list">
         <li class="social-item">
           <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
