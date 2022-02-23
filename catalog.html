@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header-logo" href="index.html">
+      <nav class="navigation"> 
+        <a class="page-header-logo" href="index.html">
         <img src="images/logo.svg" alt="Логотип Седоны" width="139" height="70">
-      </a>
-      <nav class="navigation">
+        </a>
         <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -40,8 +40,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main class="main main-container">
       <section class="filter">
+        <div class="filter-indent">
         <h1 class="filter-item"> Гостиницы Седоны</h1>
           <ul class="breadcrumbs list-reset">
             <li class="breadcrumbs-item">
@@ -81,7 +82,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-                <ul class="catalog-filter-list list-reset">
+                <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
@@ -129,7 +130,9 @@
             </div>
           </form>
         </div>
+        </div>
       </section>
+      <div class="block-result">
       <section class="result">
         <h3 class="result-title">Найдено гостиниц: 38</h3>
         <select class="select-control" aria-label="Сортировка">
@@ -159,8 +162,8 @@
             <h4 class="hotel-card-title">Amara Resort & Spa</h4>
           </a>
           <div class="hotel-card-wrapper">
-            <span class="hotel-card-result">Гостиница</span>
-            <span class="hotel-card-result">От 4000 ₽</span>
+            <span class="hotel-card-type">Гостиница</span>
+            <span class="hotel-card-price">От 4000 ₽</span>
           </div>
           <div class="hotel-card-buttons">
             <a class="hotel-card-more button" href="#">Подробнее</a>
@@ -183,7 +186,7 @@
           </a>
           <div class="hotel-card-wrapper">
             <span class="hotel-card-type">Гостиница</span>
-            <span class="hotel-card-price">От 3000 ₽</span>>
+            <span class="hotel-card-price">От 3000 ₽</span>
           </div>
           <div class="hotel-card-buttons">
             <a class="hotel-card-more button" href="#">Подробнее</a>
@@ -244,6 +247,7 @@
           </div>
         </li>
       </ul>
+    </div>
     <div class="add-search-result">
       <a class="add-search-result-link button" href="#">Загрузить ещё</a>
     </div>
