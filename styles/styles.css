@@ -264,29 +264,6 @@ li {
     margin: 0;
 } 
 
-
-.advantages-list .advantages-item:nth-child(3) .advantages-item-wrapper,
-.advantages-item:nth-child(4) .advantages-item-wrapper,
-.advantages-item:nth-child(5) .advantages-item-wrapper {
-    padding-top: 98px;
-}
-
-
-.advantages-item-more .advantages-item-wrapper,
-.advantages-item-wrapper-house,
-.advantages-item-wrapper-food,
-.advantages-item-wrapper-gifts {
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-top: 184px;
-}
-
-.advantages-item-full .advantages-item-wrapper {
-    padding-top: 98px;
-    padding-left: 90px;
-    padding-right: 90px;
-}
-
 .advantages-description,
 .advantages-number {
     font-size: 18px;
@@ -303,14 +280,25 @@ li {
 
 }
 
+
 .advantages-item-wrapper { 
     width: 400px;
     min-height: 384px;
     background-color: rgba(131, 179, 211, 0.12);
+    padding-top: 98px;
+    padding-left: 75px;
+    padding-right: 75px;
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center; */
 }
+
+.advantages-item-wrapper-house,
+.advantages-item-wrapper-food,
+.advantages-item-wrapper-gifts {
+    padding-top: 184px;
+}
+
 
 .advantages-item:nth-child(4n) .advantages-item-wrapper {
     background: rgba(131, 179, 211, 0.2);
