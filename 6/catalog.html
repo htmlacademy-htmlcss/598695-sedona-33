@@ -52,7 +52,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs">Гостиницы</a>
+              <a class="breadcrumb">Гостиницы</a>
             </li>
           </ul>
         <div class="catalog-filter">
@@ -116,14 +116,18 @@
                   <input type="text" name="maximum-price" value="9000">
                 </div>
               </div>
-              <div class="range-price">
-                <button class="range-start">
-                  <span class="visually-hidden">Цена от</span>
-                </button>
-                <button class="range-end">
-                  <span class="visually-hidden">Цена до</span>
-                </button>
-              </div>  
+              <div class="line">
+                <span class="white-line"></span>
+                <span class="grey-line"></span>
+                <div class="range-price">
+                  <button class="range-start">
+                    <span class="visually-hidden">Цена от</span>
+                  </button>
+                  <button class="range-end">
+                     <span class="visually-hidden">Цена до</span>
+                  </button>
+                </div>
+              </div> 
             </fieldset>
             <div class="action">
               <button class="button button-submit" type="submit">Применить</button>
@@ -276,7 +280,7 @@
           </li>
         </ul>
         <div class="result-number">
-          <p>Гостиниц на странице:</p>
+          <p class="result-type">Гостиниц на странице:</p>
             <select class="select-page" aria-label="Количество гостиниц">
               <option value="for">4</option>
               <option value="six">6</option>
@@ -319,6 +323,7 @@
        </a>
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
