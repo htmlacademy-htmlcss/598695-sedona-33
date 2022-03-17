@@ -686,9 +686,10 @@ img {
   width: 5px;
   height: 8px;
 
-  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   transform: translateY(-50%);
+  opacity: 0.3;
 }
 
 .breadcrumbs-link {
