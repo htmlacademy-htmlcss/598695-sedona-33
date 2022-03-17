@@ -1,4 +1,4 @@
-const link = document.querySelector('.КлассКнопкиПоискГостиницВСедоне');
+const link = document.querySelector('.search-button');
 const modal = document.querySelector('.modal-container');
 const close = document.querySelector('.modal-close-button');
 
