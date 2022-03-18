@@ -447,6 +447,7 @@ img {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #333333;
 }
 
 .newsletter-title {
@@ -720,7 +721,7 @@ img {
 
 .breadcrumbs-link:focus {
   border: 3px solid #83b3d3;
-  border-radius: 4px;
+  outline: 4px;
 }
 
 .catalog-filter {
@@ -1043,6 +1044,7 @@ img {
 .hotel-card-buttons,
 .rating-result {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
@@ -1102,7 +1104,7 @@ img {
   display: grid;
   margin-left: 81px;
 
-  grid-column-gap: 8px;
+  gap: 8px;
   grid-template-columns: auto auto auto;
 }
 
@@ -1247,10 +1249,9 @@ img {
 
 .hotel-card-favorites-current:focus {
   background: #6C9E42;
-  border: 3px solid #756257;
 }
 
-.hotel-card-favorites-current:focus {
+.hotel-card-favorites-current:hover {
   background: #6C9E42;
 }
 
@@ -1358,6 +1359,7 @@ img {
 .pagination,
 .result-number {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
