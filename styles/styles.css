@@ -243,12 +243,12 @@ img {
 
   color: #000000;
 
-  background-color: #ffffff;
+  background-color: #615048;
   background-image: url("../images/down-of-background.svg"),
     url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100% auto;
+  background-size: 100% auto, cover;
 }
 
 .welcome-br img {
@@ -297,6 +297,7 @@ img {
 .advantages-item-wrapper {
   width: 400px;
   min-height: 384px;
+  height: 100%;
   padding: 98px 75px 65px;
 
   background-color: rgba(131, 179, 211, 0.12);
@@ -444,7 +445,7 @@ img {
 .newsletter-br {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #333333;
 }
 
@@ -650,10 +651,10 @@ img {
   line-height: 23px;
   color: #ffffff;
 
-  background-color: #3f5e72;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #615048;
 }
 
 .filter-title {
